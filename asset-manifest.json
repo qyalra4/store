@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/store/static/css/main.7c43909a.css",
+    "main.js": "/store/static/js/main.a6c6a3a1.js",
+    "static/js/453.19a6a646.chunk.js": "/store/static/js/453.19a6a646.chunk.js",
+    "static/media/bg.jpg": "/store/static/media/bg.3274775b2feacc601160.jpg",
+    "static/media/p1.png": "/store/static/media/p1.c786c6ba078f6c4fb48f.png",
+    "static/media/p2.jpg": "/store/static/media/p2.a94a97a31f4435b82b3e.jpg",
+    "static/media/pro1.png": "/store/static/media/pro1.0f6e98f25fb3733176f5.png",
+    "static/media/m1.jpg": "/store/static/media/m1.4cf5344c737507f167ee.jpg",
+    "static/media/b.jpg": "/store/static/media/b.9ab604304f256bab2d32.jpg",
+    "static/media/dell.png": "/store/static/media/dell.2f7d68371b8203651efc.png",
+    "static/media/easy-return.svg": "/store/static/media/easy-return.fbd34fe95343b39003826421c411dcdc.svg",
+    "static/media/support.svg": "/store/static/media/support.ce98bae8f72d1ac2a184d1823035d26d.svg",
+    "static/media/customer-review.svg": "/store/static/media/customer-review.65ede95a7d6f8ba55d8eaad1fbd0a062.svg",
+    "static/media/secure-payment.svg": "/store/static/media/secure-payment.598894cf3c9bc14f37c9d8dea7828044.svg",
+    "index.html": "/store/index.html",
+    "main.7c43909a.css.map": "/store/static/css/main.7c43909a.css.map",
+    "main.a6c6a3a1.js.map": "/store/static/js/main.a6c6a3a1.js.map",
+    "453.19a6a646.chunk.js.map": "/store/static/js/453.19a6a646.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c43909a.css",
+    "static/js/main.a6c6a3a1.js"
+  ]
+}
