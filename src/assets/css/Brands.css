@@ -1,0 +1,188 @@
+/* src/pages/Brands.css */
+.brands-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .brands-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    background-image: url('../images/b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+  }
+  
+  .brands-header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .brands-header p {
+    color: #ffffff;
+    font-size: 1.1rem;
+  }
+  
+  .brands-categories {
+    margin: 30px 0;
+  }
+  
+  .categories-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .category-btn {
+    padding: 12px 25px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .category-btn.active {
+    background: #2d3436;
+    color: white;
+    border-color: #2d3436;
+  }
+  
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  .brand-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .brand-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .brand-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+  }
+  
+  .brand-info h3 {
+    color: #2d3436;
+    margin-bottom: 10px;
+  }
+  
+  .brand-info p {
+    color: #636e72;
+    margin-bottom: 15px;
+  }
+  
+  .explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0984e3;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background: #0873c4;
+  }
+  
+  .featured-products {
+    margin: 50px 0;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+    color: #2d3436;
+  }
+  
+  .view-all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0984e3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  
+  
+  .brands-promo {
+    background: linear-gradient(45deg, #c49d3b, #d96363);
+    color: white;
+    padding: 60px 20px;
+    border-radius: 15px;
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .promo-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .promo-btn {
+    background: white;
+    color: #6c5ce7;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .promo-btn:hover {
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 768px) {
+    .brands-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .brands-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .category-btn {
+      width: 100%;
+    }
+  }

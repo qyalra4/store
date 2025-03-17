@@ -1,0 +1,334 @@
+/*   تنسيقات الهيدر    */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    width: 100%;
+    padding: 4px 60px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* الجزء الاول من الهيدر */
+  .header-top {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    position: relative;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .logoApp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logoApp .image {
+    width: 40px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .searchDiv {
+    width: 50%;
+    display: flex;
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  .search {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .search:focus {
+    border-color: #ff0000;
+    outline: none;
+  }
+  
+  .btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 15px;
+    border: none;
+    background: #ff0000;
+    border-radius: 8px 0 0 8px ;
+    cursor: pointer;
+  } 
+  
+  .link-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .linkH {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .linkH:hover {
+    color: #ff0000;
+  }
+  
+  .span {
+    background: #ff0000;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+  }
+  
+  .login {
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  .login:hover {
+    background: #f5f5f5;
+  }
+  
+  /* الجزء الثاني من الهيدر */
+  .header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 25px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .center {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .LinkPages {
+    color: #333;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .LinkPages:hover {
+    color: #ff0000;
+    border-color: #ff0000;
+  }
+  
+  .download-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .select {
+    padding: 8px 30px 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  /* القائمة الجانبية */
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+  
+  .sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    transition: right 0.3s;
+    overflow-y: auto;
+  }
+  
+  .sidebar-overlay.active .sidebar {
+    right: 0;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .sidebar-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sidebar-link {
+    padding: 12px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s;
+  }
+  
+  .sidebar-link:hover {
+    background: #f5f5f5;
+    color: #ff0000;
+  }
+  
+  .mobile-download {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  /* التعديلات للشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .header {
+      padding: 8px 20px;
+    }
+    
+    .menu-toggle {
+      display: block;
+    }
+    
+    .header-bottom {
+      display: none;
+    }
+    
+    .searchDiv {
+      width: 60%;
+      margin: 0 10px;
+    }
+    
+    .link-header {
+      gap: 15px;
+    }
+    
+    .login {
+      display: none;
+    }
+    
+    .download-dropdown {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logoApp h2 {
+      font-size: 1.1rem;
+      width: 100px;
+    }
+    
+    
+    
+    .btn {
+      padding: 6px 12px;
+    }
+    
+    .link-header {
+      gap: 10px;
+    }
+    
+    .span {
+      font-size: 10px;
+      width: 16px;
+      height: 16px;
+    }
+
+    
+  .searchDiv {
+    width: 50%;
+    display: flex;
+    position: relative;
+    margin: 0 20px;
+  }
+  
+ .searchDiv .search {
+    display: none;
+  }
+  
+  .search:focus {
+    border-color: #ff0000;
+    outline: none;
+  }
+  
+  .btn {
+    padding: 8px 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  } 
+  .searchDiv .btn .iconS {
+    fill: black;
+  }
+
+  .link-header {
+    gap: 18px;
+  }
+ .logoApp {
+  display: flex;
+  font-size: 1rem;
+ }
+
+  }

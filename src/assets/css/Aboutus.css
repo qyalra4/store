@@ -1,0 +1,301 @@
+
+.blog-page {
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  /* الهيدر */
+  .blog-header {
+    background: linear-gradient(45deg, #c49d3b, #d96363);
+    color: white;
+    padding: 6rem 1rem;
+    text-align: center;
+  }
+  
+  .header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* مميزات المتجر */
+  .features-section {
+    padding: 4rem 1rem;
+  }
+  
+  .features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon svg {
+    font-size: 2.5rem;
+    color: #6c5ce7;
+    margin-bottom: 1rem;
+  }
+  
+  /* مقالات */
+  .blog-posts {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .section-icon {
+    font-size: 1.8rem;
+    color: #6c5ce7;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .post-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  .post-card .imagePost {
+    width: 100%;
+    border-radius: 10px;
+    height: 240px;
+    margin-inline: auto;
+    margin-block: 15px;
+  }
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .post-category {
+    background: #ff4400;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .post-date {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .read-more {
+    color: #6c5ce7;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-weight: 600;
+    margin-block: 10px;
+  }
+  
+
+  .cta-section {
+    background: linear-gradient(45deg, #3b86c4, #947919);
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+    margin: 4rem 0;
+  }
+  
+  .cta-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-button {
+    background: white;
+    color: #6c5ce7;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* النشرة البريدية */
+  .newsletter-section {
+    background: #f1f3f5;
+    padding: 4rem 1rem;
+  }
+  
+  .newsletter-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  
+  .subscribe-form input {
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+  }
+  
+  .subscribe-form button {
+    background: #000000;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+.YMdiv {
+  background: #555;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  
+  gap: 25px;
+}
+.YMdiv .imageY {
+  width: 320px;
+  height: 360px;
+  border-radius: 10px;
+}
+.YMdiv .right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+ margin-top: 20px;
+
+}
+.YMdiv .right h1, h4 {
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.YMdiv .right h4 {
+  color: #b8b3b3;
+  font-size: 1.1rem;
+} 
+.YMdiv .right .parygraph {
+  direction: ltr;
+  margin-top: 30px;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #dccaca;
+margin-inline: auto;
+margin-left: 0;
+  width: 300px;
+}
+.taskMy {
+  display: flex;
+  gap: 10px;
+  direction: ltr;
+  margin-top: 30px;
+
+}
+.taskMy .items {
+  padding: 6px 12px;
+  text-align: left;
+  display: flex;
+  font-size: 12px;
+  border-radius: 10px;
+  background-color: #dccaca;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #423d3d;
+}
+.iconsmedia {
+  margin-inline: auto;
+  display: flex;
+  direction: ltr;
+  gap: 35px;
+  margin-top: 25px;
+  margin-left: 0;
+}
+
+
+
+  /* الشاشات */
+  @media (max-width: 768px) {
+    .features-container {
+      grid-template-columns: 1fr;
+    }
+    .YMdiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+    }
+.YMdiv .taskMy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.taskMy .items {
+  display: flex;
+  justify-content: center;
+}
+
+    .posts-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .subscribe-form {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .subscribe-form input {
+      width: 100%;
+    }
+  }

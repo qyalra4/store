@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.appPage {
+   /*     AppPage      */
+}
+
+/*............... ًصور الواجهة الريسية ...............*/
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* الصورة الكبيرة */
+  .large-image img {
+    width: 1000px;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* الصور الصغيرة */
+  .small-images img {
+    width: 340px;
+    height: 450px;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* التصميم متجاوبًا */
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .small-images img {
+      height: auto;
+      max-height: 250px;
+    } }
+  
+
+
+.ADScard {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px dashed black;
+    margin-block: 20px;
+    box-shadow: 0 6px 10px 0 #6666665e;
+} 
+.ADScard .item-card {
+    display: flex;
+    gap: 14px;
+    padding: 10px 20px;
+}
+.ADScard .item-card .svgitem {
+    width: 45px;
+    height: 45px;
+}
+.item-card .heading-item {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+} 
+.item-card .heading-item h2 {
+   font-size: 1.1rem;
+}
+.item-card .heading-item h4 {
+    font-size: 14px;
+    color: #666;
+
+}
+/*.................... المنتجات الشعبية ...................*/
+.prodects {   
+    margin-block: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.prodects .titlePro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.prodects .titlePro h2 {
+    text-align: center;
+    color: black;
+}
+.prodects .titlePro .LinkPro {
+    text-align: center;
+    color: black;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+/*    contentPro      */
+.prodects .contentPro {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 14px; 
+    padding: 10px 25px;
+    background: #ffffff;
+  }
+.prodects .contentPro .itemPro {
+    width: 230px;
+    border-radius: 10px;
+    border: #000000 1px solid;
+    padding: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+.prodects .contentPro .itemPro .imagePro {
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.prodects .contentPro .itemPro .headingPro {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+}
+.itemPro .headingPro .title {
+    font-size: 1rem;
+}
+.itemPro .headingPro .pisce {
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.headingPro .pisce .pisceP {
+    font-size: 1rem;
+    color: red;
+    display: flex;
+    gap: 5px;
+    
+    .iraqi {
+        color: #555;
+    }
+    .payy {
+        color: #000000;
+    }
+}
+.headingPro .pisce .kadeem {
+    color: #666;
+    text-shadow: #666;
+    font-size: 0.9rem;
+}
+.headingPro .starts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headingPro .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5px;
+}
+.headingPro .btns .btnPro {
+    font-size: 1rem;
+    color: red;
+    display: flex;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 40px;
+    border: red 1px solid;
+    border-radius: 10px;
+    background-color: #fff; 
+    cursor: pointer;
+
+    &:hover {
+    border: rgb(255, 243, 243) 1px solid;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    }
+}
+
+.headingPro .btns .btnfan {
+    padding: 6px 8px;
+    border: red 1px solid;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+
+
+    &:hover {
+        background-color: red ;
+
+        .icon-btn {
+            color: rgb(255, 255, 255);
+        }
+
+        }
+
+    
+}
+.headingPro .btns .btnfan .icon-btn {
+    color: red;
+}
+
+/*.................  المنجات الأعلى تقييماً ..................*/
+.MostPopular {
+    
+    margin: 30px auto;
+    background-color:#f1f5f9;
+    padding: 48px 68px;
+}
+.MostPopular .titleM {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.MostPopular .titleM h2 {
+    text-align: center;
+    color: black;
+}
+.MostPopular .titleM .LinkM {
+    text-align: center;
+    color: black;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.MostPopular .contentM {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+.MostPopular .contentM .itemM {
+    width: 320px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 10px; 
+    padding: 5px 10px;
+}
+.contentM .itemM .imageM {
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+}
+.contentM .itemM .headingM {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+}
+.itemM .headingM .title {
+    font-size: 1.2rem;
+}
+.contentM .itemM .startsM {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.contentM .itemM .startsM .tqeem {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.contentM .itemM .btnM {
+    font-size: 0.9rem;
+    color: #000000;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    font-weight: 500;
+    margin-inline: auto;
+    margin-left: 0;
+    padding: 4px 8px;
+    border-radius: 10px;
+
+
+    &:hover {
+        color: red;
+        background-color: #eee;
+    }
+}
+
+
+/*-------------------------------- شاشات الصغيرة -------------------------------*/
+@media (max-width: 768px) {
+    .image-grid .large-image img {
+        width: 100%;
+    }
+    .ADScard {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+        margin-inline: auto;
+    }
+    .MostPopular {
+        padding: 25px 10px;
+    }
+    .MostPopular .titleM {
+        display: flex;
+        width: 100%;
+        padding: 0;
+
+        h2 {
+            font-size: 1rem;
+        }
+    }
+
+    .MostPopular .contentM {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+        margin-inline: auto;
+    }
+    
+}
+
+@media (max-width: 480px) {
+  
+}
